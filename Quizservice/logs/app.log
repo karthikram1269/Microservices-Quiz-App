@@ -1,0 +1,1258 @@
+2025-08-12T10:01:06.808+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 12724 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T10:01:06.838+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T10:01:07.245+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T10:01:07.247+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T10:01:14.134+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T10:01:14.919+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 738 ms. Found 1 JPA repository interface.
+2025-08-12T10:01:16.968+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f943d5a5-07c7-349b-9ccd-64b0e84a65ed
+2025-08-12T10:01:22.377+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T10:01:22.447+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T10:01:22.449+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T10:01:22.803+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T10:01:22.808+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15557 ms
+2025-08-12T10:01:26.056+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T10:01:26.418+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T10:01:26.651+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T10:01:28.352+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T10:01:28.544+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T10:01:30.641+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4041028c
+2025-08-12T10:01:30.656+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T10:01:31.151+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T10:01:31.307+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T10:01:36.599+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T10:01:37.128+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:01:39.356+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T10:01:40.222+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T10:01:40.594+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T10:01:51.665+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T10:01:52.218+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T10:01:52.399+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12T10:01:52.969+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T10:01:53.187+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T10:01:53.227+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:01:53.288+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T10:01:53.289+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T10:01:53.289+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T10:01:53.290+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T10:01:53.290+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T10:01:53.291+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T10:01:53.291+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T10:01:55.557+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T10:01:55.566+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T10:01:55.586+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T10:01:55.595+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754973115591 with initial instances count: 2
+2025-08-12T10:01:55.697+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T10:01:55.700+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754973115700, current=UP, previous=STARTING]
+2025-08-12T10:01:55.714+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:01:55.821+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T10:01:55.825+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T10:01:55.954+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:01:56.001+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 51.839 seconds (process running for 57.185)
+2025-08-12T10:01:57.096+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T10:01:57.097+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T10:01:57.106+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-08-12T10:06:53.298+05:30  INFO 12724 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:09:38.187+05:30  INFO 12724 --- [Quiz-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-08-12T10:09:38.197+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T10:09:38.198+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754973578198, current=DOWN, previous=UP]
+2025-08-12T10:09:38.199+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:09:38.211+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T10:09:38.227+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:09:38.242+05:30  INFO 12724 --- [Quiz-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T10:09:38.290+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:09:38.306+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T10:09:38.337+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T10:09:38.351+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T10:09:41.369+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T10:09:41.409+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - deregister  status: 200
+2025-08-12T10:09:41.412+05:30  INFO 12724 --- [Quiz-Service] [Thread-5] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T10:09:41.984+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 12724 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T10:09:41.985+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T10:09:45.878+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T10:09:45.937+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2025-08-12T10:09:46.821+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f943d5a5-07c7-349b-9ccd-64b0e84a65ed
+2025-08-12T10:09:48.334+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T10:09:48.344+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T10:09:48.345+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T10:09:48.771+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T10:09:48.774+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6757 ms
+2025-08-12T10:09:50.699+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T10:09:50.725+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T10:09:50.854+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T10:09:50.867+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-12T10:09:53.240+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20cfedde
+2025-08-12T10:09:53.241+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-12T10:09:53.248+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T10:09:53.249+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T10:09:53.673+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T10:09:54.107+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:09:55.208+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T10:09:55.996+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T10:09:56.346+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T10:10:06.364+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T10:10:06.840+05:30  WARN 12724 --- [Quiz-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T10:10:07.011+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-12T10:10:07.306+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T10:10:07.332+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T10:10:07.333+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:10:07.334+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T10:10:07.335+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T10:10:07.585+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T10:10:07.769+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T10:10:07.772+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T10:10:07.773+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T10:10:07.777+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754973607777 with initial instances count: 3
+2025-08-12T10:10:07.873+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T10:10:07.875+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754973607875, current=UP, previous=STARTING]
+2025-08-12T10:10:07.875+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:10:07.889+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T10:10:07.890+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T10:10:07.958+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:10:08.009+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 26.284 seconds (process running for 549.193)
+2025-08-12T10:10:08.012+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T10:10:08.013+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754973608013, current=DOWN, previous=UP]
+2025-08-12T10:10:08.015+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:10:08.020+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T10:10:08.036+05:30  INFO 12724 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:10:08.043+05:30  INFO 12724 --- [Quiz-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-12T10:10:08.061+05:30  INFO 12724 --- [Quiz-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T10:10:08.090+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:10:08.094+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-12T10:10:08.124+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-12T10:10:08.128+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T10:10:11.141+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T10:10:11.167+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - deregister  status: 200
+2025-08-12T10:10:11.168+05:30  INFO 12724 --- [Quiz-Service] [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T10:10:29.179+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 8240 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T10:10:29.190+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T10:10:29.462+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T10:10:29.464+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T10:10:36.072+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T10:10:36.861+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 747 ms. Found 1 JPA repository interface.
+2025-08-12T10:10:38.807+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f943d5a5-07c7-349b-9ccd-64b0e84a65ed
+2025-08-12T10:10:44.271+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T10:10:44.347+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T10:10:44.356+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T10:10:44.961+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T10:10:44.969+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15502 ms
+2025-08-12T10:10:49.345+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T10:10:49.931+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T10:10:50.260+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T10:10:52.220+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T10:10:52.443+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T10:10:54.728+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37c517e9
+2025-08-12T10:10:54.746+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T10:10:55.077+05:30  WARN 8240 --- [Quiz-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T10:10:55.213+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T10:11:01.999+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T10:11:02.364+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:11:05.413+05:30  WARN 8240 --- [Quiz-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T10:11:08.257+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T10:11:08.899+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T10:11:23.071+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T10:11:23.886+05:30  WARN 8240 --- [Quiz-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T10:11:24.107+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-12T10:11:24.855+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T10:11:25.221+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T10:11:25.252+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:11:25.329+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T10:11:25.330+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T10:11:25.332+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T10:11:25.332+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T10:11:25.333+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T10:11:25.333+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T10:11:25.334+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T10:11:27.737+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T10:11:27.744+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T10:11:27.751+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T10:11:27.757+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754973687755 with initial instances count: 3
+2025-08-12T10:11:27.843+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T10:11:27.848+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754973687848, current=UP, previous=STARTING]
+2025-08-12T10:11:27.861+05:30  INFO 8240 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:11:27.977+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T10:11:27.983+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T10:11:28.187+05:30  INFO 8240 --- [Quiz-Service] [restartedMain] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 61.335 seconds (process running for 66.402)
+2025-08-12T10:11:28.214+05:30  INFO 8240 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:11:28.416+05:30  INFO 8240 --- [Quiz-Service] [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T10:11:28.416+05:30  INFO 8240 --- [Quiz-Service] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T10:11:28.427+05:30  INFO 8240 --- [Quiz-Service] [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-08-12T10:16:25.344+05:30  INFO 8240 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:21:25.351+05:30  INFO 8240 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T10:21:51.957+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T10:21:52.013+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T10:21:52.014+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754974312014, current=DOWN, previous=UP]
+2025-08-12T10:21:52.016+05:30  INFO 8240 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T10:21:52.061+05:30  INFO 8240 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T10:21:52.154+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T10:21:52.193+05:30  INFO 8240 --- [Quiz-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T10:21:52.300+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T10:21:52.354+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T10:21:52.523+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T10:21:52.535+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T10:21:55.547+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T10:21:55.570+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - deregister  status: 200
+2025-08-12T10:21:55.573+05:30  INFO 8240 --- [Quiz-Service] [RMI TCP Connection(21)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T17:49:25.291+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 11888 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T17:49:25.318+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T17:49:25.611+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T17:49:25.612+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T17:49:32.810+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T17:49:33.434+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 573 ms. Found 1 JPA repository interface.
+2025-08-12T17:49:34.910+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0de23f71-554c-3448-85fc-0d27b417a114
+2025-08-12T17:49:39.584+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T17:49:39.656+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T17:49:39.657+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T17:49:40.013+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T17:49:40.016+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14400 ms
+2025-08-12T17:49:44.605+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T17:49:45.032+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T17:49:45.272+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T17:49:47.272+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T17:49:47.474+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T17:49:48.742+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4328bc86
+2025-08-12T17:49:48.749+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T17:49:49.025+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T17:49:49.133+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T17:49:53.411+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T17:49:53.905+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T17:49:56.367+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T17:49:57.056+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T17:49:57.429+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T17:50:06.834+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T17:50:07.322+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T17:50:07.521+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-12T17:50:08.129+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T17:50:08.259+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T17:50:08.283+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T17:50:08.335+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T17:50:08.336+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T17:50:08.337+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T17:50:08.338+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T17:50:08.339+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T17:50:08.341+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T17:50:08.342+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T17:50:10.086+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T17:50:10.094+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T17:50:10.101+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T17:50:10.109+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755001210106 with initial instances count: 2
+2025-08-12T17:50:10.164+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T17:50:10.167+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755001210167, current=UP, previous=STARTING]
+2025-08-12T17:50:10.175+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T17:50:10.244+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T17:50:10.249+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T17:50:10.348+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 47.432 seconds (process running for 51.668)
+2025-08-12T17:50:10.390+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T17:50:11.366+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T17:50:11.367+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T17:50:11.376+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-08-12T17:55:08.439+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T17:57:20.909+05:30 ERROR [Quiz-Service,,] 11888 --- [Quiz-Service] [http-nio-8085-exec-2] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143) ~[na:na]
+	at com.wipro.gk.service.QuizService.getQuizQuestions(QuizService.java:33) ~[classes/:na]
+	at com.wipro.gk.controller.QuizController.getQuizByID(QuizController.java:55) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.wipro.gk.controller.QuizController$$SpringCGLIB$$0.getQuizByID(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.9.jar:6.2.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.9.jar:6.2.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T17:59:55.944+05:30 DEBUG [Quiz-Service,689b33be74e70c1550cad5ee768d07e9,50cad5ee768d07e9] 11888 --- [Quiz-Service] [http-nio-8085-exec-3] [689b33be74e70c1550cad5ee768d07e9-50cad5ee768d07e9] i.g.r.c.i.CircuitBreakerStateMachine     : CircuitBreaker 'createQuizCircuitBreaker' succeeded:
+2025-08-12T17:59:55.951+05:30 DEBUG [Quiz-Service,689b33be74e70c1550cad5ee768d07e9,50cad5ee768d07e9] 11888 --- [Quiz-Service] [http-nio-8085-exec-3] [689b33be74e70c1550cad5ee768d07e9-50cad5ee768d07e9] i.g.r.c.i.CircuitBreakerStateMachine     : Event SUCCESS published: 2025-08-12T17:59:55.946608800+05:30[Asia/Calcutta]: CircuitBreaker 'createQuizCircuitBreaker' recorded a successful call. Elapsed time: 4850 ms
+2025-08-12T18:00:08.519+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T18:01:29.634+05:30 DEBUG [Quiz-Service,689b341f3b571648fa0a9c3877899d40,3336b9018bcf4ca6] 11888 --- [Quiz-Service] [http-nio-8085-exec-6] [689b341f3b571648fa0a9c3877899d40-3336b9018bcf4ca6] i.g.r.c.i.CircuitBreakerStateMachine     : CircuitBreaker 'createQuizCircuitBreaker' succeeded:
+2025-08-12T18:01:29.637+05:30 DEBUG [Quiz-Service,689b341f3b571648fa0a9c3877899d40,3336b9018bcf4ca6] 11888 --- [Quiz-Service] [http-nio-8085-exec-6] [689b341f3b571648fa0a9c3877899d40-3336b9018bcf4ca6] i.g.r.c.i.CircuitBreakerStateMachine     : Event SUCCESS published: 2025-08-12T18:01:29.635980300+05:30[Asia/Calcutta]: CircuitBreaker 'createQuizCircuitBreaker' recorded a successful call. Elapsed time: 88 ms
+2025-08-12T18:05:08.519+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T18:10:08.536+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T18:13:12.254+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-12T18:13:12.255+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-12T18:14:04.335+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T18:14:04.374+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T18:14:04.376+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755002644376, current=DOWN, previous=UP]
+2025-08-12T18:14:04.377+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T18:14:04.440+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T18:14:04.474+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T18:14:04.484+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2025-08-12T18:14:04.485+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T18:14:04.550+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2025-08-12T18:14:04.551+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T18:14:04.557+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T18:14:04.552+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T18:14:04.558+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T18:14:04.606+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T18:14:04.626+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T18:14:04.679+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T18:14:07.688+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T18:14:07.755+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 69 more
+
+2025-08-12T18:14:07.756+05:30  WARN [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T18:14:07.757+05:30 ERROR [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T18:14:07.764+05:30  INFO [Quiz-Service,,] 11888 --- [Quiz-Service] [RMI TCP Connection(36)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T19:18:44.068+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 13432 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T19:18:44.080+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T19:18:44.260+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T19:18:44.261+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T19:18:49.702+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T19:18:50.330+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 588 ms. Found 1 JPA repository interface.
+2025-08-12T19:18:51.526+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0de23f71-554c-3448-85fc-0d27b417a114
+2025-08-12T19:18:54.589+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T19:18:54.645+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T19:18:54.646+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T19:18:55.021+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T19:18:55.023+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10754 ms
+2025-08-12T19:18:57.968+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T19:18:58.221+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T19:18:58.352+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T19:18:59.288+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T19:18:59.396+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T19:19:00.388+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ad29278
+2025-08-12T19:19:00.394+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T19:19:00.636+05:30  WARN [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T19:19:00.708+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T19:19:04.918+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T19:19:05.373+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T19:19:07.203+05:30  WARN [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T19:19:07.741+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-12T19:19:08.011+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T19:19:15.710+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T19:19:16.263+05:30  WARN [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T19:19:16.464+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-12T19:19:17.122+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T19:19:17.290+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T19:19:17.322+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T19:19:17.384+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T19:19:17.386+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T19:19:17.386+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T19:19:17.387+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T19:19:17.387+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T19:19:17.387+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T19:19:17.388+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T19:19:19.679+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T19:19:19.687+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T19:19:19.696+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T19:19:19.707+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755006559702 with initial instances count: 2
+2025-08-12T19:19:19.784+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T19:19:19.787+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755006559787, current=UP, previous=STARTING]
+2025-08-12T19:19:19.819+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T19:19:19.847+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T19:19:19.850+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T19:19:20.004+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 38.331 seconds (process running for 44.266)
+2025-08-12T19:19:20.240+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T19:19:20.938+05:30  WARN [Quiz-Service,,] 13432 --- [Quiz-Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-12T19:19:20.939+05:30  WARN [Quiz-Service,,] 13432 --- [Quiz-Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.4.jar:3.5.4]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-12T19:19:21.371+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T19:19:21.372+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T19:19:21.380+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-08-12T19:19:43.168+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T19:19:43.171+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T19:19:43.172+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755006583172, current=DOWN, previous=UP]
+2025-08-12T19:19:43.173+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T19:19:43.182+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T19:19:43.204+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T19:19:43.205+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T19:19:43.240+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T19:19:43.251+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T19:19:43.281+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T19:19:43.984+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T19:19:46.986+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T19:19:47.095+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - deregister  status: 200
+2025-08-12T19:19:47.096+05:30  INFO [Quiz-Service,,] 13432 --- [Quiz-Service] [RMI TCP Connection(11)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T19:28:45.355+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Starting QuizsServiceApplication using Java 21.0.7 with PID 2844 (C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice\target\classes started by KARTHIK RAM in C:\Users\KARTHIK RAM\Documents\sts-wipro-microservices\Quizservice)
+2025-08-12T19:28:45.366+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T19:28:45.539+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12T19:28:45.539+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12T19:28:49.846+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T19:28:50.317+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 442 ms. Found 1 JPA repository interface.
+2025-08-12T19:28:51.494+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0de23f71-554c-3448-85fc-0d27b417a114
+2025-08-12T19:28:54.225+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-12T19:28:54.266+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T19:28:54.267+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T19:28:54.458+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T19:28:54.459+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8918 ms
+2025-08-12T19:28:57.032+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T19:28:57.197+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T19:28:57.312+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T19:28:58.171+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T19:28:58.271+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T19:28:59.146+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@115167b0
+2025-08-12T19:28:59.152+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T19:28:59.329+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-12T19:28:59.394+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T19:29:02.135+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T19:29:02.377+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T19:29:03.636+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T19:29:04.114+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-12T19:29:04.358+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.openfeign.FeignClientFactoryBean   : For 'QUESTION-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2025-08-12T19:29:10.110+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T19:29:10.361+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T19:29:10.459+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-12T19:29:10.784+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T19:29:10.863+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T19:29:10.877+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T19:29:10.907+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T19:29:10.908+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T19:29:10.908+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T19:29:10.909+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T19:29:10.910+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T19:29:10.912+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T19:29:10.912+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T19:29:12.029+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T19:29:12.038+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T19:29:12.045+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T19:29:12.050+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755007152048 with initial instances count: 3
+2025-08-12T19:29:12.096+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZ-SERVICE with eureka with status UP
+2025-08-12T19:29:12.098+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755007152098, current=UP, previous=STARTING]
+2025-08-12T19:29:12.106+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T19:29:12.146+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-12T19:29:12.150+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-12T19:29:12.215+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [restartedMain] [                                                 ] com.wipro.gk.QuizsServiceApplication     : Started QuizsServiceApplication in 28.602 seconds (process running for 31.781)
+2025-08-12T19:29:12.258+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration status: 204
+2025-08-12T19:29:13.102+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(6)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T19:29:13.103+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(6)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T19:29:13.110+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(6)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-08-12T19:34:10.920+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T19:39:10.938+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T19:42:28.808+05:30 DEBUG [Quiz-Service,689b4bc8a4772ed84ef7ef5ac3e09ad9,a9c7d66340cd6114] 2844 --- [Quiz-Service] [http-nio-8085-exec-1] [689b4bc8a4772ed84ef7ef5ac3e09ad9-a9c7d66340cd6114] i.g.r.c.i.CircuitBreakerStateMachine     : CircuitBreaker 'createQuizCircuitBreaker' succeeded:
+2025-08-12T19:42:28.820+05:30 DEBUG [Quiz-Service,689b4bc8a4772ed84ef7ef5ac3e09ad9,a9c7d66340cd6114] 2844 --- [Quiz-Service] [http-nio-8085-exec-1] [689b4bc8a4772ed84ef7ef5ac3e09ad9-a9c7d66340cd6114] i.g.r.c.i.CircuitBreakerStateMachine     : Event SUCCESS published: 2025-08-12T19:42:28.813970400+05:30[Asia/Calcutta]: CircuitBreaker 'createQuizCircuitBreaker' recorded a successful call. Elapsed time: 1740 ms
+2025-08-12T19:43:32.662+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T19:43:32.668+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZ-SERVICE with eureka with status DOWN
+2025-08-12T19:43:32.669+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755008012669, current=DOWN, previous=UP]
+2025-08-12T19:43:32.670+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085: registering service...
+2025-08-12T19:43:32.685+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T19:43:32.712+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-12T19:43:32.730+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 21 more
+
+2025-08-12T19:43:32.732+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T19:43:32.771+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T19:43:32.775+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125)
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 22 more
+
+2025-08-12T19:43:32.777+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T19:43:32.778+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T19:43:32.800+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T19:43:32.798+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:828) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T19:43:32.831+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T19:43:32.937+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T19:43:35.940+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T19:43:36.005+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 69 more
+
+2025-08-12T19:43:36.006+05:30  WARN [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/QUIZ-SERVICE/KarthikPc:Quiz-Service:8085": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-12T19:43:36.007+05:30 ERROR [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZ-SERVICE/KarthikPc:Quiz-Service:8085 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-12T19:43:36.011+05:30  INFO [Quiz-Service,,] 2844 --- [Quiz-Service] [RMI TCP Connection(29)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
